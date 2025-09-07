@@ -22,9 +22,40 @@ video {
     height: auto;
     border: 2px solid white;
     border-radius: 10px;
+    /* We hide the webcam because we'll be using it for motion detection in the background */
+    display: none;
 }
 
 #status {
     margin-top: 20px;
     font-size: 1.2em;
+}
+
+/* New styles for the game container and characters */
+.game-container {
+    position: relative;
+    width: 80%;
+    max-width: 600px;
+    height: 400px;
+    border: 2px solid white;
+    border-radius: 10px;
+    margin-top: 20px;
+    overflow: hidden;
+    background: #008000; /* Green background to look like a fighting stage */
+}
+
+.game-container img {
+    position: absolute;
+    bottom: 0;
+    height: 90%;
+    object-fit: contain;
+}
+
+#player-character {
+    left: 10%;
+    transform: scaleX(-1); /* Flips the image so it faces the opponent */
+}
+
+#opponent-character {
+    right: 10%;
 }
