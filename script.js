@@ -2,7 +2,7 @@
 const webcam = document.getElementById('webcam');
 const statusDiv = document.getElementById('status');
 
-// Get the character image elements
+// Get the character shape elements
 const playerCharacter = document.getElementById('player-character');
 const opponentCharacter = document.getElementById('opponent-character');
 
