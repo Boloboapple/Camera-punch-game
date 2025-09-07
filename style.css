@@ -16,14 +16,14 @@ h1 {
     margin-bottom: 0.5em;
 }
 
+/* Updated camera size */
 video {
-    width: 80%;
-    max-width: 600px;
+    width: 20%;
+    max-width: 150px;
     height: auto;
     border: 2px solid white;
     border-radius: 10px;
-    /* We hide the webcam because we'll be using it for motion detection in the background */
-    display: none;
+    margin-bottom: 20px;
 }
 
 #status {
@@ -31,7 +31,7 @@ video {
     font-size: 1.2em;
 }
 
-/* New styles for the game container and characters */
+/* Styles for the game container and characters */
 .game-container {
     position: relative;
     width: 80%;
@@ -41,21 +41,25 @@ video {
     border-radius: 10px;
     margin-top: 20px;
     overflow: hidden;
-    background: #008000; /* Green background to look like a fighting stage */
+    background: #008000;
 }
 
-.game-container img {
+.character {
     position: absolute;
     bottom: 0;
-    height: 90%;
-    object-fit: contain;
+    width: 80px;
+    height: 200px;
+    border-radius: 10px 10px 0 0;
+    transform-origin: bottom center;
 }
 
 #player-character {
     left: 10%;
-    transform: scaleX(-1); /* Flips the image so it faces the opponent */
+    background-color: #007bff; /* Player color */
+    transform: scaleX(-1); /* Flips the shape to face the opponent */
 }
 
 #opponent-character {
     right: 10%;
+    background-color: #dc3545; /* Opponent color */
 }
