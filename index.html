@@ -8,11 +8,16 @@
 </head>
 <body>
     <h1>Camera Punch Game</h1>
-    <p>Get ready to punch!</p>
+    <p>Click on the screen to test a punch!</p>
 
     <video id="webcam" autoplay playsinline></video>
+    
+    <div class="game-container">
+        <img id="player-character" src="player.png" alt="Player Character">
+        <img id="opponent-character" src="opponent.png" alt="Opponent Character">
+    </div>
 
-    <div id="status">Waiting for a punch...</div>
+    <div id="status">Waiting for webcam...</div>
 
     <script src="script.js"></script>
 </body>
